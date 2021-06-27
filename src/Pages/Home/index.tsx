@@ -1,9 +1,16 @@
 import React from "react";
 
+import Header from "../../Components/Header";
+import TextRotator from "../../Components/TextRotator";
+
+import codeman from "../../assets/codegif.gif";
+
 const Home: React.FC = () => {
   return (
     <>
-      <h1>Gerador de Devs</h1>
+      <Header />
+      <TextRotator />
+      <img src={codeman} alt="Gif de homem digitando código" />
     </>
   );
 };
