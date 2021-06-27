@@ -136,14 +136,14 @@ background: inherit;
         transition: color 0.4s ease;
 
        &:hover{
-        color:#FFF200;
+        color:#3C6E71;
         font-weight: bold;
         transition: color 0.5s ease;
        } 
 }
 
 .menu-wrap .menu >div >div >ul >li >a:active {
-        color:#FFF200;
+        color:#3C6E71;
     }
 
 
