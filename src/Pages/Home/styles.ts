@@ -21,6 +21,14 @@ button {
   border-radius: 10px;
   background-color:  #284B63;
   margin: 50px 0;
+  -webkit-box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.9); 
+box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.9);
+}
+
+button:hover{
+width: 165px;
+height: 50px;
+transition: .3s ease;
 }
 
 

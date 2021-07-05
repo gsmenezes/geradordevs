@@ -138,9 +138,7 @@ background: inherit;
         transition: color 0.4s ease;
 
        &:hover{
-        color:#3C6E71;
-        font-weight: bold;
-        transition: color 0.5s ease;
+       border-bottom: 2px solid #FFF;
        } 
 }
 
