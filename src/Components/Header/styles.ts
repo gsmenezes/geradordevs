@@ -5,7 +5,6 @@ top:0;
 left:0;
 background-color: #353535;
 display: flex;
-justify-content: space-around;
 align-items: center;
 vertical-align: middle;
 padding: 2px 0;
@@ -13,17 +12,20 @@ width: 100vw;
 height: 65px;
 position: fixed;
 z-index:2000;
+
 `;
 
 export const Logo = styled.div`
+padding-left: 2%;
+
 > img {
-    width: 35px;
-    height: 35px;
+    width: 73px;
+    height: 60px;
 }
 `;
 
 export const Menu = styled.div`
-
+padding-left: 85%;
 .menu-wrap .toggler {
     position: absolute;
     top: 0;
@@ -159,6 +161,14 @@ background: inherit;
 .menu-wrap .toggler:checked ~ .menu >div >div {
     opacity: 1;
     transition: opacity 0.8s ease;
+}
+
+@media(max-width: 600px){
+    padding-left: 60% !important;
+}
+
+@media(max-width: 900px){
+    padding-left: 78%;
 }
 
 `;

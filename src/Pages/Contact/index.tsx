@@ -22,4 +22,6 @@ const Contact: React.FC = () => {
   );
 };
 
+//https://api.whatsapp.com/send?phone=5511950473336&text=Oi!%20Gostaria%20de%20saber%20mais%20sobre%20o%20curso%20de%20Dev.
+
 export default Contact;
