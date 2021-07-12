@@ -1,7 +1,4 @@
-<div align="center" id="top"> 
 ![Print da tela](public/screenshot.png)
-
-</div>
 
 <h1 align="center">Gerador de Devs</h1>
 
