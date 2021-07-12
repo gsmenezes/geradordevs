@@ -16,7 +16,7 @@ const Contact: React.FC = () => {
       <Container>
         <Title>Entre em contato conosco</Title>
         <SocialContainer>
-          <a href="mailto:atendimento@geradordedevs.com.br">
+          <a className="mail" href="mailto:atendimento@geradordedevs.com.br">
             atendimento@geradordedevs.com.br
           </a>
           <LittleCards>

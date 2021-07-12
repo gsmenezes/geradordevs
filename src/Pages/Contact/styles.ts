@@ -19,32 +19,47 @@ export const SocialContainer = styled.div `
 display: flex;
 flex-direction: column;
 
-a{
+.mail{
   text-align: center;
-  margin: 10% auto 5%;
+  margin: 5% auto 5%;
   text-decoration: none;
   color: #353535;
   font-weight: bold;
 }
+
+.mail:hover{
+  font-size: 18px;
+  color: #284B63;
+}
 `;
 
 export const LittleCards = styled.div `
-display: flex;
-justify-content: center;
+  bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.card{
-  background-color: #284B63;
-  border-radius: 10px;
-  width: 40px;
-  height: 40px;
-  padding: 8px;
-  margin: 15px 20px;
-  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.8); 
-  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.8);
-}
+  a {
+    position: relative;
+    display: inline-block;
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    background: #353535 ;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s ease-in-out;
+  }
 
-.whats{
-  width: 24px;
-  padding-left: 1px;
-}
+  .whats{
+    width: 24px;
+    padding-left: 1px;
+  }
+
+  .card a:hover{
+    background: #284B63;
+    transform: translateY(-10px);
+  }
 `;
