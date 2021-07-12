@@ -14,8 +14,8 @@ import {
 const AboutUs: React.FC = () => {
   return (
     <>
+      <Header />
       <Container>
-        <Header />
         <Title>Sobre nós</Title>
         <TextContainer>
           <p>

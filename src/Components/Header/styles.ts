@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import menu from '../../assets/menu.png';
+import menu from '../../assets/hamburger.svg';
 import close from '../../assets/close.png';
 
 export const Container = styled.div`
@@ -93,6 +93,7 @@ border-bottom: 2px solid #FFF;
        background-position: center;
        cursor: pointer;
        z-index: 1000;
+       filter: invert(1);
    }
    .toggle.active{
         background: url(${close});
