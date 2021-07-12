@@ -1,23 +1,12 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Geradordevs" />
+![Print da tela](screenshot.png)
 
 </div>
 
 <h1 align="center">Gerador de Devs</h1>
 
 <p align="center">
-  <img alt="Principal linguagem do projeto" src="https://img.shields.io/github/languages/top/gsmenezes/geradordevs?color=56BEB8">
-
-  <img alt="Quantidade de linguagens utilizadas" src="https://img.shields.io/github/languages/count/gsmenezes/geradordevs?color=56BEB8">
-
-  <img alt="Tamanho do repositório" src="https://img.shields.io/github/repo-size/gsmenezes/geradordevs?color=56BEB8">
-
-  <img alt="Licença" src="https://img.shields.io/github/license/gsmenezes/geradordevs?color=56BEB8">
-</p>
-
-<p align="center">
   <a href="#dart-sobre">Sobre</a> &#xa0; | &#xa0; 
-  <a href="#sparkles-funcionalidades">Funcionalidades</a> &#xa0; | &#xa0;
   <a href="#rocket-tecnologias">Tecnologias</a> &#xa0; | &#xa0;
   <a href="#white_check_mark-pré-requesitos">Pré requisitos</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-começando">Começando</a> &#xa0; | &#xa0;
@@ -29,13 +18,9 @@
 
 ## :dart: Sobre ##
 
-Sobre o seu projeto
-
-## :sparkles: Funcionalidades ##
-
-:heavy_check_mark: Funcionalidade 1;\
-:heavy_check_mark: Funcionalidade 2;\
-:heavy_check_mark: Funcionalidade 3;
+Site desenvolvido para a Escola Gerador de Devs.     
+A Gerador de Devs tem a missão de preparar pessoas para o mercado de trabalho, através da tecnologia.   
+Os cursos são 100% gratuitos, com aulas do básico ao avançado em Back-end e Front-end.
 
 ## :rocket: Tecnologias ##
 

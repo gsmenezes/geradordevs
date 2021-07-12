@@ -41,7 +41,7 @@ a {
 
 @media (max-width: 900px){
   button {
-    margin: 25px 0 0;
+    margin: 25px 0 15px;
   }
 }
 
