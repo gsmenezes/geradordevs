@@ -10,7 +10,7 @@ const AppRoutes: React.FC = () => (
   <Switch>
     <Route path="/" exact component={Home} />
     <Route path="/sobre-nos" exact component={AboutUs} />
-    <Route path="/formacoes" exact component={Courses} />
+    <Route path="/curso" exact component={Courses} />
     <Route path="/contato" exact component={Contact} />
   </Switch>
 );

@@ -1,8 +1,14 @@
 import styled from 'styled-components';
 
-export const Container = styled.div ``;
+export const Container = styled.div `
+z-index: 1500;
+margin-top: 120px;
+position: relative;
+`;
 
-export const Title = styled.div ``;
+export const Title = styled.h2 `
+display: flex;
+justify-content: center;`;
 
 export const TextContainer = styled.div `
 `;

@@ -18,9 +18,7 @@ const AboutUs: React.FC = () => {
     <>
       <Container>
         <Header />
-        <Title>
-          <h1>Sobre nós</h1>
-        </Title>
+        <Title>Sobre nós</Title>
         <TextContainer>
           <p>
             Fundado em 2020 com ênfase em ensinar e desenvolver talentos para o

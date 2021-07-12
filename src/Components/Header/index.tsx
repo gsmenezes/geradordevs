@@ -1,42 +1,45 @@
 import React from "react";
 
-import logo from "../../assets/logo3.svg";
+import logo from "../../assets/logo.svg";
 
 import { Container, Logo, Menu } from "./styles";
 
 const Header: React.FC = () => {
+  const menuToggle = document.querySelector(".toggle");
+  const navigation = document.querySelector(".navigation");
+
+  const handleOpen = () => {
+    menuToggle?.classList.toggle("active");
+    navigation?.classList.toggle("active");
+  };
   return (
     <Container>
       <Logo>
-        <img src={logo} alt="Silhueta de cabeça escrito GD Gerador de Devs" />
+        <a href="/" className="logo">
+          <img
+            src={logo}
+            alt="Cabeça com códigos e letras G e D que referem-se a Gerador de Devs"
+          />
+        </a>
       </Logo>
       <Menu>
-        <div className="menu-wrap">
-          <input type="checkbox" name="" className="toggler" />
-          <div className="hamburguer">
-            <div></div>
-          </div>
-          <div className="menu">
-            <div>
-              <div>
-                <ul>
-                  <li>
-                    <a href="/">Home</a>
-                  </li>
-                  <li>
-                    <a href="/sobre-nos">Sobre nós</a>
-                  </li>
-                  <li>
-                    <a href="/formacoes">Formações</a>
-                  </li>
-                  <li>
-                    <a href="/contato">Contato</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div className="toggle" onClick={handleOpen}></div>
+        <ul className="navigation">
+          <li>
+            <a href="/" className="active">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="/sobre-nos">Sobre</a>
+          </li>
+          <li>
+            <a href="/curso">Curso</a>
+          </li>
+          <li>
+            <a href="/contato">Contato</a>
+          </li>
+        </ul>
       </Menu>
     </Container>
   );

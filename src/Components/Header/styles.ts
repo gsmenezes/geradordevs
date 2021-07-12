@@ -1,172 +1,105 @@
 import styled from 'styled-components';
+import menu from '../../assets/menu.png';
+import close from '../../assets/close.png';
 
 export const Container = styled.div`
-top:0;
-left:0;
-background-color: #353535;
-display: flex;
-align-items: center;
-vertical-align: middle;
-padding: 2px 0;
-width: 100vw;
-height: 65px;
 position: fixed;
-z-index:2000;
+top: 0;
+left: 0;
+width: 100%;
+height: 75px;
+padding: 40px 100px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 1000;
+background-color: #353535;
 
+@media (max-width: 991px){
+    padding: 20px;
+}
 `;
 
 export const Logo = styled.div`
-padding-left: 2%;
+position: relative;
+display: inline-block;
 
-> img {
-    width: 73px;
-    height: 60px;
+img {
+    width: 90px;
+    height: 75px;
 }
 `;
 
 export const Menu = styled.div`
-padding-left: 85%;
-.menu-wrap .toggler {
-    position: absolute;
-    top: 0;
-    z-index: 2;
-    cursor: pointer;
-    width: 50px;
-    height:50px;
-    opacity: 0;
-};
-
-.menu-wrap .hamburguer {
-    position: absolute;
-    top:0;
-    z-index: 1;
-    width: 60px;
-    height: 60px;
-    padding: 1rem;
-    background: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-};
-
-.menu-wrap .hamburguer >div {
+ul{
     position: relative;
-    width: 87%;
-    height: 2px;
-    background-color: #FFF;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.4s ease;
 }
 
-.menu-wrap .hamburguer >div:before,
-    .menu-wrap .hamburguer >div:after {
-        content: '';
-position: absolute;
-z-index: 1;
-top: -10px;
-left: 0;
-width: 100%;
-height: 2px;
-background: inherit;
-    }  
-
-.menu-wrap .hamburguer >div:after {
-        top: 10px;
-    }
-
-.menu-wrap .toggler:checked + .hamburguer >div {
-    transform: rotate(135deg);
-    
-}
-
-.menu-wrap .toggler:checked + .hamburguer >div:before,
-.menu-wrap .toggler:checked + .hamburguer >div:after {
-    top: 0;
-    transform: rotate(90deg);
-    
-}
-
-.menu-wrap .menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    visibility: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.menu-wrap .menu >div {
-    background: #353535;
-    border-radius: 50%;
-    width: 200vw;
-    height: 200vw;
-    display: flex;
-    flex: none;
-    align-items: center;
-    justify-content: center;
-    transform: scale(0);
-    transition: all 0.4s ease;
-    z-index:1000;
-    overflow:hidden;
-}
-
-.menu-wrap .menu >div >div {
-    text-align: center;
-    max-width: 90vh;
-    max-height: 100vh;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-}
-
-.menu-wrap .menu >div >div >ul >li {
+li{
     list-style: none;
+}
+
+li a {
+    display: inline-block;
     color: #FFF;
-    font-size: 2rem;
-    padding: 1.5rem;
-    text-transform: uppercase;
-    }
-
-.menu-wrap .menu >div >div >ul >li >a {
-        color: inherit;
-        text-decoration: none;
-        transition: color 0.4s ease;
-
-       &:hover{
-       border-bottom: 2px solid #FFF;
-       } 
+    font-weight: 600;
+    font-size: 1.1em;
+    margin-left: 10px;
+    padding: 8px 18px;
+    text-decoration: none;
+    user-select: none;
 }
 
-.menu-wrap .menu >div >div >ul >li >a:active {
-        color:#3C6E71;
-    }
+li a .active,
+li a:hover{
+border-bottom: 2px solid #FFF;
+} 
 
+@media (max-width: 991px){
+   ul {
+       display: none;
+   }
 
-.menu-wrap .toggler:checked ~ .menu {
-        visibility: visible;
-    }
+   ul.active{
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       background: #353535;
+   }
 
-.menu-wrap .toggler:checked ~ .menu >div {
-        transform: scale(1);
-        transition-duration: 0.75s
-    }
+   ul li {
+       margin: 10px 0;
+   }
+   ul li a {
+       margin-left: 0;
+   }
 
-.menu-wrap .toggler:checked ~ .menu >div >div {
-    opacity: 1;
-    transition: opacity 0.8s ease;
+   .toggle{
+       position: fixed;
+       top: 20px;
+       right: 20px;
+       width: 40px;
+       height: 40px;
+       background: url(${menu});
+       background-size: 25px;
+       background-repeat: no-repeat;
+       background-position: center;
+       cursor: pointer;
+       z-index: 1000;
+   }
+   .toggle.active{
+        background: url(${close});
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+   }
 }
-
-@media(max-width: 600px){
-    padding-left: 60% !important;
-}
-
-@media(max-width: 900px){
-    padding-left: 78%;
-}
-
 `;
