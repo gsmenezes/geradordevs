@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-![Print da tela](screenshot.png)
+![Print da tela](public/screenshot.png)
 
 </div>
 
