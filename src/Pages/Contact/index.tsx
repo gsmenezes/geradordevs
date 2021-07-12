@@ -24,6 +24,7 @@ const Contact: React.FC = () => {
               <a
                 href="https://www.linkedin.com/company/gerador-de-devs/about/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img
                   src={Linkedin}
@@ -35,6 +36,7 @@ const Contact: React.FC = () => {
               <a
                 href="https://www.instagram.com/gerador.devs/?hl=pt-br"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img
                   src={Instagram}
@@ -46,6 +48,7 @@ const Contact: React.FC = () => {
               <a
                 href="https://www.facebook.com/gerador.dedevs.1"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img
                   src={Facebook}
@@ -57,6 +60,7 @@ const Contact: React.FC = () => {
               <a
                 href="https://api.whatsapp.com/send?phone=5511950473336&text=Oi!%20Gostaria%20de%20saber%20mais%20sobre%20o%20curso%20de%20Dev."
                 target="_blank"
+                rel="noreferrer"
               >
                 <img
                   className="whats"

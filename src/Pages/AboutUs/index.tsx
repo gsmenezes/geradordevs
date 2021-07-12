@@ -9,8 +9,6 @@ import {
   Team,
   Block,
   SubTitle,
-  Block2,
-  Block3,
 } from "./styles";
 
 const AboutUs: React.FC = () => {
@@ -21,49 +19,60 @@ const AboutUs: React.FC = () => {
         <Title>Sobre nós</Title>
         <TextContainer>
           <p>
-            Fundado em 2020 com ênfase em ensinar e desenvolver talentos para o
-            mercado de trabalho, o Gerador de Devs empenha-se à transformar a
-            vida das pessoas que desejam entrar no mundo da Tecnologia.
+            Fundado em 2020 com ênfase em{" "}
+            <strong>ensinar e desenvolver talentos</strong> para o mercado de
+            trabalho, o Gerador de Devs empenha-se à transformar a vida das
+            pessoas que desejam entrar no mundo da Tecnologia.
           </p>
           <p>
-            Os cursos são preparados para atender toda a diversidade de pessoas,
-            inclusive as que não possuem experiência, pois as aulas vão do
+            Os cursos são preparados para atender{" "}
+            <strong>toda a diversidade de pessoas</strong>, inclusive as que{" "}
+            <strong>não possuem experiência</strong>, pois as aulas vão do
             básico ao avançado, além de contar com plantões de dúvidas semanais.
           </p>
           <p>
             O aprendizado dos alunos é avaliado constantemente através de
-            desafios, que são pontuados e acompanhados pelos professores,
-            preparando-os então para darem seus primeiros passos na área.
+            <strong> desafios</strong>, que são pontuados e acompanhados pelos
+            professores, preparando-os então para darem seus primeiros passos na
+            área.
           </p>
         </TextContainer>
         <Team>
           <Block>
-            <SubTitle>Fundadores e Professores</SubTitle>
-            <div>
+            <div className="names">
+              <SubTitle>Fundadores e Professores</SubTitle>
               <p>Renato Naumann</p>
               <p>Leonardo Dornelas</p>
             </div>
           </Block>
-          <Block2>
-            <SubTitle>Coordenação</SubTitle>
-            <p>Letícia Moreno</p>
-            <SubTitle>Criação</SubTitle>
-            <div>
+          <Block>
+            <div className="names">
+              <SubTitle>Coordenação</SubTitle>
+              <p>Letícia Moreno</p>
+            </div>
+            <div className="names">
+              <SubTitle>Criação</SubTitle>
               <p>Laryssa Moreno</p>
               <p>Beatriz Moreno</p>
               <p>Gabriela Silva</p>
             </div>
-            <SubTitle>Captação de Talentos</SubTitle>
-            <p>Jorge Campos</p>
-          </Block2>
-          <Block3>
-            <SubTitle>Professores</SubTitle>
-            <p>Mohamed Emara</p>
-            <p>Gabriela Cesaro</p>
-            <p>Ivonir Neto</p>
-            <SubTitle>Atendimento ao aluno</SubTitle>
-            <p>Nicoly Bizzi</p>
-          </Block3>
+            <div className="names">
+              <SubTitle>Captação de Talentos</SubTitle>
+              <p>Jorge Campos</p>
+            </div>
+          </Block>
+          <Block>
+            <div className="names">
+              <SubTitle>Professores</SubTitle>
+              <p>Mohamed Emara</p>
+              <p>Gabriela Cesaro</p>
+              <p>Ivonir Neto</p>
+            </div>
+            <div className="names">
+              <SubTitle>Atendimento ao aluno</SubTitle>
+              <p>Nicoly Bizzi</p>
+            </div>
+          </Block>
         </Team>
       </Container>
     </>

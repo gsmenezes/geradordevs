@@ -26,6 +26,7 @@ const Home: React.FC = () => {
             <a
               href="https://geradordedevs.hubspotpagebuilder.com/inscricao"
               target="_blank"
+              rel="noreferrer"
             >
               Eu quero!
             </a>
