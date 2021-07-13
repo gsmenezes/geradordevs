@@ -8,7 +8,7 @@ const Courses: React.FC = () => {
     <>
       <Header />
       <Container>
-        <Title>Nosso Curso</Title>
+        <Title>Formação Dev</Title>
         <List>
           <p>
             Na Gerador de Devs, não temos o intuito de gerar
