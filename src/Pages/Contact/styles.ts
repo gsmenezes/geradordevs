@@ -11,7 +11,9 @@ display: flex;
 justify-content: center;
 
 @media (max-width: 600px){
-  width: 65%;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
 }
 `;
 

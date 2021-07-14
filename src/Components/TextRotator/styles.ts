@@ -24,7 +24,7 @@ line-height: 28px;
 
 @media (max-width: 600px){
     font-size: 20px;
-    margin-top: 10%;
+    margin-top: 20%;
   }
 
   @media(max-width: 400px){

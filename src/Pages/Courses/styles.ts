@@ -69,6 +69,10 @@ a {
 
 @media (max-width: 600px){
  width: 80% !important;
+
+ button {
+   margin: 20px 0 75px;
+ }
 }
 
 @media (max-width: 900px){

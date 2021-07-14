@@ -1,48 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 
-import logo from "../../assets/logo.svg";
+import { ReactComponent as CloseMenu } from "../../assets/close.svg";
+import { ReactComponent as MenuIcon } from "../../assets/hamburger.svg";
+import { ReactComponent as Logo } from "../../assets/logo.svg";
 
-import { Container, Logo, Menu } from "./styles";
+import "./styles.css";
 
 const Header: React.FC = () => {
-  const menuToggle = document.querySelector(".toggle");
-  const navigation = document.querySelector(".navigation");
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
 
-  const handleOpen = () => {
-    menuToggle?.classList.toggle("active");
-    navigation?.classList.toggle("active");
-  };
   return (
-    <Container>
-      <Logo>
-        <a href="/" className="logo">
-          <img
-            src={logo}
-            alt="Cabeça com códigos e letras G e D que referem-se a Gerador de Devs"
-          />
-        </a>
-      </Logo>
-      <Menu>
-        <div className="toggle" onClick={handleOpen}></div>
-        <ul className="navigation">
-          <li>
-            <a href="/" className="active">
-              Home
-            </a>
+    <div className="header">
+      <div className="logo-nav">
+        <div className="logo-container">
+          <a href="#">
+            <Logo className="logo" />
+          </a>
+        </div>
+        <ul className={click ? "nav-options active" : "nav-options"}>
+          <li className="option" onClick={closeMobileMenu}>
+            <a href="/">Home</a>
           </li>
-          <li>
+          <li className="option" onClick={closeMobileMenu}>
             <a href="/sobre-nos">Sobre</a>
           </li>
-          <li>
-            <a href="/curso">Curso</a>
+          <li className="option" onClick={closeMobileMenu}>
+            <a href="/formacao">Formação</a>
           </li>
-          <li>
+          <li className="option" onClick={closeMobileMenu}>
             <a href="/contato">Contato</a>
           </li>
         </ul>
-      </Menu>
-    </Container>
+      </div>
+      <div id="mobile-menu" onClick={handleClick}>
+        {click ? (
+          <CloseMenu className="menu-icon" />
+        ) : (
+          <MenuIcon className="menu-icon" />
+        )}
+      </div>
+    </div>
   );
 };
-
 export default Header;
